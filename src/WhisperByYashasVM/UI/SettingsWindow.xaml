@@ -1,0 +1,44 @@
+<Window x:Class="WhisperByYashasVM.UI.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Whisper -By YashasVM Settings"
+        Width="520"
+        Height="360"
+        WindowStartupLocation="CenterScreen"
+        Background="#090A0D"
+        Foreground="#F0F1F3">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Whisper -By YashasVM"
+                   FontSize="22"
+                   FontWeight="SemiBold"/>
+
+        <TextBlock Grid.Row="1"
+                   Margin="0,12,0,0"
+                   Text="Shortcut: Win+Y (hold-to-talk)"
+                   Opacity="0.9"/>
+
+        <TextBlock Grid.Row="2"
+                   Margin="0,8,0,0"
+                   Text="Model: base.en (local whisper.cpp runtime)"
+                   Opacity="0.9"/>
+
+        <TextBlock Grid.Row="3"
+                   Margin="0,24,0,0"
+                   TextWrapping="Wrap"
+                   Opacity="0.75"
+                   Text="Output mode: Auto-paste to focused input and copy to clipboard backup. If auto-paste fails, clipboard remains available."/>
+
+        <TextBlock Grid.Row="4"
+                   HorizontalAlignment="Right"
+                   Opacity="0.45"
+                   Text="Made by @Yashas.VM"/>
+    </Grid>
+</Window>
